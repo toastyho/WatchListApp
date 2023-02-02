@@ -50,7 +50,7 @@ namespace WatchList.WatchListClasses
                         sql = "SELECT Show_Title AS 'Show', Main_Genre AS 'Main Genre', Sub_Genre AS 'Sub Genre', Status  FROM WatchListAppTable WHERE Status = 'Curious'";
                         break;
                     case "palace":
-                        sql = "SELECT Show_Title AS 'Show', Season  FROM WatchListAppTable WHERE Status = 'Waiting'";
+                        sql = "SELECT Show_Title AS 'Show', Season, Status  FROM WatchListAppTable WHERE Status = 'Waiting'";
                         break;
                     case "hall":
                         sql = "SELECT Show_Title AS 'Show', Main_Genre AS 'Main Genre', Sub_Genre AS 'Sub Genre'  FROM WatchListAppTable WHERE Status = 'Finished'";
